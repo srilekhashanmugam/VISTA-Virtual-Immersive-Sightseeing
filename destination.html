@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VISTA | Destination Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="destinationRoot" class="experience-page">
+  <div class="experience-nav">
+    <button class="back-btn" onclick="history.back()">← Back to destinations</button>
+    <div class="experience-logo">VISTA<span>.</span></div>
+    <button class="access-btn" onclick="document.body.classList.toggle('senior-mode')">Senior mode</button>
+  </div>
+
+  <section class="place-hero">
+    <div class="place-copy">
+      <div id="destinationState" class="place-label"></div>
+      <h1 id="destinationName"></h1>
+      <p id="destinationLead" class="lead"></p>
+      <div class="guide-controls">
+        <button id="listenEn" class="guide-btn">English guide</button>
+        <button id="listenTa" class="guide-btn">தமிழ் வழிகாட்டி</button>
+        <button id="listenBoth" class="guide-btn alt">Bilingual guide</button>
+        <button id="stopVoice" class="guide-btn alt">Stop</button>
+      </div>
+      <div class="voice-panel">
+        <h3>Listen and learn</h3>
+        <p id="guidePreview"></p>
+        <div id="voiceStatus" class="voice-status">Choose English or Tamil to start the guide.</div>
+      </div>
+    </div>
+    <div id="visualHero" class="place-visual"></div>
+  </section>
+
+  <section class="explore-section">
+    <div class="explore-layout">
+      <div class="viewer-card">
+        <iframe id="viewerFrame" class="visual-frame" allow="fullscreen; autoplay; xr-spatial-tracking" allowfullscreen></iframe>
+        <div class="viewer-note"><strong id="viewType">360° PANORAMA</strong> • Drag inside the viewer to look around. The immersive view stays inside VISTA.</div>
+      </div>
+      <aside class="info-stack">
+        <div class="info-box">
+          <h3>Why this place?</h3>
+          <p id="destinationLead2"></p>
+        </div>
+        <div class="info-box">
+          <h3>Highlights</h3>
+          <ul id="highlightList"></ul>
+        </div>
+        <div class="info-box">
+          <h3>Immersive media</h3>
+          <p id="viewCredit"></p>
+          <p class="credit">The embedded panorama/video remains hosted by its original provider. VISTA does not send the visitor to Google Maps.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <div class="place-footer">
+    VISTA • Real destinations • Immersive media • Tamil + English accessibility
+  </div>
+</div>
+<script src="script.js"></script>
+<script>
+  const lead2=document.getElementById("destinationLead2");
+  const lead1=document.getElementById("destinationLead");
+  if(lead2 && lead1) lead2.textContent=lead1.textContent;
+</script>
+</body>
+</html>

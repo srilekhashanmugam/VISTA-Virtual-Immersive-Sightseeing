@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VISTA | Virtual Immersive Sightseeing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="logo" href="#home">VISTA<span>.</span></a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#how">How it works</a>
+  </nav>
+  <button class="start-btn" onclick="startJourney()">Start Journey</button>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="eyebrow">✦ VIRTUAL IMMERSIVE SIGHTSEEING</div>
+    <h1>The world is<br><span>closer</span> than you think.</h1>
+    <p>Explore real places across India through immersive views and friendly bilingual guides — without leaving your home.</p>
+    <div class="hero-buttons">
+      <button class="primary-btn" onclick="startJourney()">Start your journey <span>→</span></button>
+      <button class="secondary-btn" onclick="exploreDestinations()">Explore destinations</button>
+    </div>
+    <div class="hero-proof">
+      <span>10</span> real Indian destinations
+      <i></i>
+      <span>தமிழ் + English</span> guide
+      <i></i>
+      <span>360°</span> immersive views
+    </div>
+  </div>
+  <div class="floating-note">
+    <strong>VISTA</strong>
+    <span>Experience the world,<br>even when you cannot travel.</span>
+  </div>
+</section>
+
+<section class="destinations" id="destinations">
+  <div class="section-heading">
+    <div class="eyebrow dark">DISCOVER INDIA</div>
+    <h2>Choose a place.<br><span>Step inside.</span></h2>
+    <p>Every destination below is a real place. Open one to explore its story, highlights, immersive view and bilingual guide.</p>
+  </div>
+  <div id="destinationGrid" class="destination-grid"></div>
+</section>
+
+<section class="how" id="how">
+  <div class="how-copy">
+    <div class="eyebrow dark">HOW VISTA WORKS</div>
+    <h2>A simple journey, designed for everyone.</h2>
+    <p>VISTA turns real destination media into an accessible virtual sightseeing experience. Visitors can look around, read about the place and listen in Tamil or English.</p>
+  </div>
+  <div class="how-steps">
+    <div><b>01</b><strong>Choose</strong><span>Pick a destination.</span></div>
+    <div><b>02</b><strong>Explore</strong><span>Look around the immersive view.</span></div>
+    <div><b>03</b><strong>Listen</strong><span>Hear the guide in Tamil or English.</span></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="logo">VISTA<span>.</span></div>
+  <p>Experience the world, even when you cannot travel.</p>
+  <small>Virtual experience • Real destinations • Bilingual access</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
